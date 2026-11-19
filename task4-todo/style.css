@@ -1,0 +1,17 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;display:flex;justify-content:center;background:#2b2a3a;color:#fff;font-family:Arial,sans-serif;padding:32px 16px}
+.app{width:min(620px,100%)}
+h1{margin-bottom:18px}
+.form{display:grid;grid-template-columns:1fr auto auto auto;gap:8px;margin-bottom:14px}
+input{padding:10px;border-radius:8px;border:0;font-size:.95rem}
+button{padding:10px 14px;border:0;border-radius:8px;background:#c0392b;color:#fff;cursor:pointer}
+.filters{display:flex;gap:8px;margin-bottom:14px}.filters button{background:#59587a}.filters .on{background:#c0392b}
+.list{list-style:none}
+.item{display:flex;align-items:center;gap:10px;background:#3d3c55;padding:12px;border-radius:10px;margin-bottom:8px}
+.item .body{flex:1}.item .when{font-size:.8rem;color:#c9c8e0}
+.item.done .t{text-decoration:line-through;opacity:.55}
+.item.overdue .when{color:#ff8a80}
+.item button{padding:6px 10px;background:#59587a;font-size:.85rem}.item .del{background:#9b2c2c}
+.edit{flex:1}
+.count{margin-top:10px;color:#c9c8e0;font-size:.9rem}
+@media(max-width:560px){.form{grid-template-columns:1fr 1fr}.form #text{grid-column:1/-1}.form button{grid-column:1/-1}}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Landing Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#home">Launchpad</a>
+  <button class="nav__toggle" id="toggle" aria-label="Toggle menu">&#9776;</button>
+  <nav class="nav__links" id="links">
+    <a class="nav__item" href="#home">Home</a>
+    <a class="nav__item" href="#features">Features</a>
+    <a class="nav__item" href="#about">About</a>
+    <a class="nav__item" href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+  <section id="home" class="hero"><h1>Build. Launch. Grow.</h1><p>A responsive landing page with a fixed, scroll-aware navigation menu.</p><a class="btn" href="#features">Explore</a></section>
+  <section id="features" class="block"><h2>Features</h2>
+    <div class="grid"><article class="card"><h3>Fixed menu</h3><p>Stays visible on every section.</p></article><article class="card"><h3>Scroll style</h3><p>Changes colour once you scroll.</p></article><article class="card"><h3>Hover effect</h3><p>Items highlight on hover.</p></article></div></section>
+  <section id="about" class="block alt"><h2>About</h2><p>Built with HTML, CSS and vanilla JavaScript. The layout adapts using Flexbox, Grid and media queries.</p></section>
+  <section id="contact" class="block"><h2>Contact</h2><p>hello@example.com</p></section>
+</main>
+<footer>&copy; 2026 Launchpad</footer>
+<script src="script.js"></script>
+</body>
+</html>
